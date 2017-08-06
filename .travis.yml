@@ -4,11 +4,11 @@ language: bash
 script:
   - mkdir bundles
   - touch bundles/things
-  - tar xzvf bundles/bidule.tgz README.md
+  - tar czvf bundles/bidule.tgz README.md
 
 services:
   - docker
 
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y git-all build-essential 
+  - sudo apt-get install -y vim 
