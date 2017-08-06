@@ -27,6 +27,3 @@ jobs:
         file: bundles/*
         skip_cleanup: true
         draft: true
-        on:
-          tag: true
-          draft: false
