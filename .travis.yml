@@ -19,5 +19,3 @@ deploy:
   api_key: $GITHUB_OAUTH_TOKEN
   file: bundles/*
   skip_cleanup: true
-  on:
-    tags: true
