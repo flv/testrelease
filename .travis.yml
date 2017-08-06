@@ -17,7 +17,7 @@ deploy:
   provider: releases
   file_glob: true
   api_key: $GITHUB_OAUTH_TOKEN
-  file: directory/*
+  file: bundles/*
   skip_cleanup: true
   on:
     tags: true
