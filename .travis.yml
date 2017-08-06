@@ -3,7 +3,7 @@ sudo: required
 language: bash
 script:
   - mkdir bundles
-  - touch bundles/things
+  - cp README.md bundles/
   - tar czvf bundles/bidule.tgz README.md
 
 services:
