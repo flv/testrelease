@@ -21,12 +21,12 @@ jobs:
       script: echo "make deb"
     - stage: deploy release
       deploy:
-	provider: releases
-	file_glob: true
-	api_key: $GITHUB_OAUTH_TOKEN
-	file: bundles/*
-	skip_cleanup: true
-	draft: true
-	on:
-	  tag: true
-	  draft: false
+        provider: releases
+        file_glob: true
+        api_key: $GITHUB_OAUTH_TOKEN
+        file: bundles/*
+        skip_cleanup: true
+        draft: true
+        on:
+          tag: true
+          draft: false
